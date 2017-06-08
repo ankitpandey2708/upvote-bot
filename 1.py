@@ -38,14 +38,7 @@ while 1:
         b = driver.execute_script("return document.body.scrollHeight;")
         if(a==b):
                 break;
-'''
-        t_end = time.time() + int(parameters["timeout_seconds"])
-        while time.time() < t_end:
-                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        b = driver.execute_script("return document.body.scrollHeight;")
-        if(a==b):
-                break;
-'''
+
 # Time to upvote the answers ;)                                  
 driver.execute_script("window.a = document.getElementsByClassName('Answer Upvote Button TwoStateButton primary_action answer_upvote main_button');")                    # Retrieving all the upvote items in an array 
 driver.execute_script("for(var i=0; i<a.length; i++) { a[i].click(); }")        # Clicking on each and every item one by one
