@@ -40,6 +40,6 @@ while 1:
                 break;
 
 # Time to upvote the answers ;)                                  
-driver.execute_script("window.a = document.getElementsByClassName('Answer Button Upvote TwoStateButton primary_action answer_upvote main_button');")                    # Retrieving all the upvote items in an array 
+driver.execute_script("window.a = document.getElementsByClassName('icon_action_bar-button blue_icon');")                    # Retrieving all the upvote items in an array 
 driver.execute_script("for(var i=0; i<a.length; i++) { a[i].click(); }")        # Clicking on each and every item one by one
 print('All answers upvoted :D\n')
