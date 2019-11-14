@@ -1,10 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time, threading
-from configparser import SafeConfigParser
+from configparser import ConfigParser
 
 # Reading configuration file  
-parser = SafeConfigParser()
+parser = ConfigParser()
 parser.read('config.ini')
 parameters = {}                                                                 # Dictionary for storing the parsed parameters
 
