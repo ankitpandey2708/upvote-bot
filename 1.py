@@ -42,4 +42,4 @@ while 1:
 # Time to upvote the answers ;)                                  
 driver.execute_script("window.a = document.getElementsByClassName('u-hardware-accelerated');")                    # Retrieving all the upvote items in an array 
 driver.execute_script("for(var i=0; i<a.length; i++) { a[i].click(); }")        # Clicking on each and every item one by one
-print('All answers upvoted :D\n')
+print('All answers upvoted')
